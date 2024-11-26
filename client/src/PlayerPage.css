@@ -1,0 +1,71 @@
+/* playerpage.css */
+body,
+html {
+  margin: 0;
+  height: 100%;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+#main {
+  max-width: 700px; /* Optional: Set a max width */
+
+  background-color: white; /* Optional: Background for visibility */
+}
+
+.textUi {
+  font-family: fantasy;
+  font-size: 25px;
+  display: flex;
+  gap: 30px;
+  position: fixed;
+}
+
+#opponentUi {
+  left: 10px;
+  top: 10px;
+}
+
+#playerUi {
+  left: 10px;
+  bottom: 10px;
+}
+
+#bPass {
+  background-color: rgb(142, 161, 161);
+  right: 10px;
+  top: 400px;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 135px;
+  min-width: 700px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+.card {
+  width: 90px;
+  height: 110px;
+  margin: 10px;
+  background-color: rgb(166, 166, 167);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  
+  border: 1px solid black;
+}
+
+
+
+.card > p {
+  
+  font-size: 20; /* Scales the font size between 12px and 24px */
+  font-size-adjust: 0.5;
+}
